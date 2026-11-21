@@ -1,0 +1,12 @@
+Package: ImageFilter
+Title: This package can be used on images to convert the colors of each pixel to grey, red, green or blue.
+Version: 0.0.0.9000
+Authors@R: 
+    person("Larissa", role = c("aut", "cre"))
+Description: two functions, i) takes an RGB hexadecimal value and converts it to grey, red, green or blue, and ii) goes pixel by pixel (or vector by vector) through a bitmap (image) and runs the conversion function on that specific pixel to convert its color.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.3xs
+Imports: 
+    magick
