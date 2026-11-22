@@ -1,7 +1,7 @@
 Package: ImageFilter
 Title: Image Filter Package for RGB Colour Conversion
 Version: 0.0.0.9000
-Authors@R: person("Larissa", email = "larissa.kahnwald@ki.se", role = c("aut", "cre"))
+Authors@R: person("Larissa", email = "larissa-k-g@users.noreply.github.com", role = c("aut", "cre"))
 Description: A package for applying colour filter to bitmap images. Contains functions to convert each pixel to greyscale, red, green or blue, as well as a pixelscanner that applies these filters to an entire image, pixel by pixel.
 License: MIT + file LICENSE
 Encoding: UTF-8
