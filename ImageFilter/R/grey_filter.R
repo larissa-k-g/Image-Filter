@@ -1,4 +1,5 @@
 #' @title Greyscale filter
+#' @description Applies a greyscale filter to a single pixel of a bitmap
 #' @param pixel, A raw() vector representing R,G,B values of a pixel
 #' @return A raw() vector where all values equal the calculated greyscale value
 #' @export

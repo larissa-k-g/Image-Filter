@@ -3,4 +3,5 @@
 export(blue_filter)
 export(green_filter)
 export(grey_filter)
+export(pixel_scanner)
 export(red_filter)

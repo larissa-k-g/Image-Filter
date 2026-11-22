@@ -15,5 +15,5 @@ green_filter(pixel, threshold = 127)
 A raw() vector corresponding to the decided colour on a scale of 0-255
 }
 \description{
-Colour filters - green
+Takes a single pixel and returns it as green (above threshold) or black
 }

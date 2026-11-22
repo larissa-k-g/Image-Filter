@@ -13,5 +13,5 @@ grey_filter(pixel)
 A raw() vector where all values equal the calculated greyscale value
 }
 \description{
-Greyscale filter
+Applies a greyscale filter to a single pixel of a bitmap
 }

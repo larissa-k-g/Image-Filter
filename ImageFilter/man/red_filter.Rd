@@ -15,5 +15,5 @@ red_filter(pixel, threshold = 127)
 A raw() vector corresponding to the decided colour on a scale of 0-255
 }
 \description{
-Colour filters - red
+Takes a single pixel and returns it as red (above threshold) or black
 }
