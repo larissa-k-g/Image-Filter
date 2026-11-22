@@ -7,6 +7,6 @@ Description: two functions, i) takes an RGB hexadecimal value and converts it to
 License: MIT + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.3.3xs
+RoxygenNote: 7.3.3
 Imports: 
     magick
