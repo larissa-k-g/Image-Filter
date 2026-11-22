@@ -1,0 +1,64 @@
+---
+title: "ImageFilter"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{ImageFilter}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+##Setup
+```{r setup}
+library(magick)
+library(ImageFilter)
+```
+
+## Load your image into a bitmap
+```{r "load_image"}
+
+my_image <- image_read("../test-image1.jpg") #replace with the your image pathway
+bitmap_image <- my_image[[1]]
+image_read(bitmap_image)
+```
+
+## Apply filter
+```{r "Grey filter"}
+## Grey filter
+grey_image <- pixel_scanner(bitmap_image, grey_filter)
+image_read(grey_image)
+```
+
+```{r "Red filter"}
+##Red filter
+red_image <- pixel_scanner(bitmap_image, red_filter)
+image_read(red_image)
+```
+
+```{r "Green filter"}
+##Green filter
+green_image <- pixel_scanner(bitmap_image, green_filter)
+image_read(green_image)
+```
+
+```{r "Blue filter"}
+##Blue filter
+blue_image <- pixel_scanner(bitmap_image, blue_filter)
+image_read(blue_image)
+```
+
+## Adjusting the threshold
+```{r "threshold"}
+#can be applied to any other filter as well, with a threshold between 0-255
+my_red_low <- function(pixel) red_filter(pixel, threshold = 20)
+result_low <- pixel_scanner(bitmap_image, my_red_low)
+image_read(result_low)
+```
+
+
